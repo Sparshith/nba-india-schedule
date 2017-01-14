@@ -92,6 +92,14 @@ $subscribed = isset($_SESSION['google_access_token']) &&  $_SESSION['google_acce
 			    border: 0;
 			}
 
+			@media only screen and (max-width: 768px) {
+			  input {
+			    font-size: 1.1em;
+			    padding: 10px;
+			  }
+			}
+
+
 			.label {
 				margin-bottom: 5px;
 			}
@@ -110,7 +118,7 @@ $subscribed = isset($_SESSION['google_access_token']) &&  $_SESSION['google_acce
     <body>
         <div id="header">Korv3r</div>
         <h2 style="text-align: center;">
-        	<?php echo $subscribed ? 'You have added matches from  '. $_COOKIE['fromDate'] .' to  '.$_COOKIE['toDate'] : 'Add the NBA India schedule to your google calendar!'; ?></h2>
+        	<?php echo $subscribed ? 'Successfully added matches from  '. $_COOKIE['fromDate'] .' to  '.$_COOKIE['toDate'].' to your calendar.' : 'Add the NBA India schedule to your google calendar!'; ?></h2>
         <div class="container">
         	<?php if(!$subscribed): ?>
         	<div style="margin-bottom: 30px;margin-top: 30px">
