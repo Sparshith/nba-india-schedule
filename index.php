@@ -7,7 +7,7 @@ function getAuthUrl() {
     $client->setApplicationName(APPLICATION_NAME);
     $client->setScopes(SCOPES);
     $client->setAuthConfig(CLIENT_SECRET_PATH);
-    $client->setRedirectUri('http://localhost:8000/oauth-callback.php');
+    $client->setRedirectUri(HOST . 'oauth-callback.php');
     $authUrl = $client->createAuthUrl();
     return $authUrl;
 }
