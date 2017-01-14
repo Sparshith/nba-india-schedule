@@ -31,7 +31,7 @@ $subscribed = isset($_SESSION['google_access_token']) &&  $_SESSION['google_acce
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <title> Korv3r </title>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis:400,700,800,600,300">
-        <link rel="icon" href="images/korver.kpg" type="image/x-icon">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="datedropper.min.css" rel="stylesheet" type="text/css" />
         <style>
