@@ -18,6 +18,8 @@ $authUrl = getAuthUrl();
 $next_week_date = date('m-d-Y', strtotime('+1 week'));
 $subscribed = isset($_SESSION['google_access_token']) &&  $_SESSION['google_access_token']  ? true : false;
 
+unset($_SESSION['google_access_token']);
+
 ?>
 
 <!DOCTYPE html>
